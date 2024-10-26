@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+  </head>
+  <script>
+    var a = 1;
+    var b = 5;
+    var Myobj = {
+        a: 1,
+        b: 2,
+        getValue : function(){
+            //Current context//??
+            return this.a + this.b;
+        },
+        getSum: ()=>{
+            return this.a + this.b;
+        }
+    }
+
+
+    console.log(Myobj.getValue()); //?? 3
+    console.log(Myobj.getSum()); // 6 //??
+
+    let obj = Myobj.getValue;
+    //window
+    console.log(obj()); //?? 6
+
+    let newObj = Myobj.getSum;
+    console.log(newObj.call(Myobj)); // 6
+
+
+    
+
+  </script>
+  <body>
+     <button onclick="onClickOfButton(event)">Click me!</button>
+  </body>
+</html>
