@@ -28,7 +28,6 @@ function App(props) {
        Child
        <br/> {props.text}
       <input type="text" onChange={e=>{
-        console.log(e.target.value);
         myUserInput = e.target.value;
       }}/>
       <button onClick={()=>{
