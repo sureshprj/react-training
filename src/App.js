@@ -42,7 +42,6 @@ function MainApp(){
   return <div>
           Parent
           <input type="text" onChange={e=>{
-            console.log(e.target.value);
             parentText = e.target.value;
          }}/>
      <App text={parentText}></App>
