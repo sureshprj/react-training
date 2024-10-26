@@ -54,7 +54,6 @@ function MainApp(){
 function Counter(){
   const [counter, setCounter] = useState(1); //very frist 
   const [sCounter, setScounter] = useState(1);
-  const [total, setTotal] = useState(0);
 
   useEffect(()=>{
     //construtor
